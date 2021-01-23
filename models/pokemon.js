@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
   );
 
   Pokemon.associate = (models) => {
-    Pokemon.belongs(models.Pokemon, {
+    Pokemon.belongsTo(models.Pokemon, {
       foreignKey: {
         allowNull: false,
       },
