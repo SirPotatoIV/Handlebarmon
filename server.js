@@ -1,7 +1,7 @@
 let express = require('express');
 
 let app = express();
-let PORT = process.env.PORT || 8080;
+let PORT = process.env.PORT || 4000;
 
 // Import all models
 let db = require('./models');
@@ -25,7 +25,7 @@ require('./controllers/trainerController.js')(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync({ force: true }).then(function () {
+db.sequelize.sync({ force: false }).then(function () {
   app.listen(PORT, function () {
     console.log('App listening on PORT ' + PORT);
   });
