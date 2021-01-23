@@ -21,7 +21,7 @@ app.use(express.static('public'));
 
 // Routes
 // =============================================================
-// let routes = require("./controllers/trainerController.js")
+require('./controllers/trainerController.js')(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
