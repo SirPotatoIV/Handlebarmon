@@ -1,0 +1,17 @@
+{
+  "name": "initial",
+  "version": "1.0.0",
+  "description": "Handlebars, Sequelize, and Express application to demo handlebars.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake O'Toole",
+  "license": "MIT",
+  "dependencies": {
+    "sequelize": "^6.4.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
